@@ -7,11 +7,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UITableViewController {
+    var signos: [String] = []
+    var signoDescription: [String] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        signos.append("Aries")
+        signos.append("Touro")
+        signos.append("Virgem")
+        signos.append("Aquario")
+        signos.append("Peixes")
     }
 
 
