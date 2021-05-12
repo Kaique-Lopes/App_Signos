@@ -26,19 +26,26 @@ class ViewController: UITableViewController {
         signoDescription.append("Peixinho")
     }
     
+        // MARK: - Put the number of sections on the table
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
+        // MARK: - Print the content in the table rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return signos.count
     }
-
+    
+        // MARK: - Creates cell to print using the array index
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reusableCell = "cell"
         let cell = tableView.dequeueReusableCell(withIdentifier: reusableCell, for: indexPath)
         cell.textLabel?.text = signos[indexPath.row]
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
     }
 }
 
