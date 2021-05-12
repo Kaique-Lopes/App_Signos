@@ -18,6 +18,12 @@ class ViewController: UITableViewController {
         signos.append("Virgem")
         signos.append("Aquario")
         signos.append("Peixes")
+        
+        signoDescription.append("Ariano")
+        signoDescription.append("Tourinho")
+        signoDescription.append("Virginiano")
+        signoDescription.append("Aquariano")
+        signoDescription.append("Peixinho")
     }
 
 
