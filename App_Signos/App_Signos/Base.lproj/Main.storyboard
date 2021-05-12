@@ -21,7 +21,7 @@
                             <color key="backgroundColor" red="0.78631073240000005" green="0.83777552840000002" blue="0.88671797510000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </imageView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Jpi-gE-gr7">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Jpi-gE-gr7">
                                 <rect key="frame" x="0.0" y="84.333333969116211" width="414" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jpi-gE-gr7" id="xhK-33-dL5">

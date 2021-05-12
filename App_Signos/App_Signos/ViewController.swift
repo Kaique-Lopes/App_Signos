@@ -31,8 +31,14 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return signos.count
     }
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let reusableCell = "cell"
+        let cell = tableView.dequeueReusableCell(withIdentifier: reusableCell, for: indexPath)
+        cell.textLabel?.text = signos[indexPath.row]
+        return cell
+    }
 }
 
