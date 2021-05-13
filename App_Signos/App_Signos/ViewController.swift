@@ -18,12 +18,16 @@ class ViewController: UITableViewController {
         signos.append("Virgem")
         signos.append("Aquario")
         signos.append("Peixes")
+        signos.append("Libras")
+        signos.append("Sagitário")
         
         signoDescription.append("Ariano")
         signoDescription.append("Tourinho")
         signoDescription.append("Virginiano")
         signoDescription.append("Aquariano")
         signoDescription.append("Peixinho")
+        signoDescription.append("Librinhas")
+        signoDescription.append("Sagitarinho")
     }
     
         // MARK: - Put the number of sections on the table
@@ -44,8 +48,6 @@ class ViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
-    }
+    
 }
 
