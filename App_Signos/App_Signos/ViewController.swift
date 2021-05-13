@@ -49,7 +49,12 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let alert = UIAlertController(title: "Significado", message: signoDescription[indexPath.row], preferredStyle: .alert)
+        let confirme = UIAlertAction(title: "ok", style: .default, handler: nil)
         
         tableView.selectRow(at: indexPath, animated: true, scrollPosition: .bottom)
     }
