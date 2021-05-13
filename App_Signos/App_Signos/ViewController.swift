@@ -50,6 +50,8 @@ class ViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        tableView.selectRow(at: indexPath, animated: true, scrollPosition: .bottom)
     }
     
 }
