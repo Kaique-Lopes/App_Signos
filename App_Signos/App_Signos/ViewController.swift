@@ -55,6 +55,9 @@ class ViewController: UITableViewController {
         
         let alert = UIAlertController(title: "Significado", message: signoDescription[indexPath.row], preferredStyle: .alert)
         let confirme = UIAlertAction(title: "ok", style: .default, handler: nil)
+        alert.addAction(confirme)
+        
+        present(alert, animated: true, completion: nil)
         
         tableView.selectRow(at: indexPath, animated: true, scrollPosition: .bottom)
     }
