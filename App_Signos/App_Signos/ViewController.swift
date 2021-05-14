@@ -52,7 +52,7 @@ class ViewController: UITableViewController {
         
         
         tableView.deselectRow(at: indexPath, animated: true)
-        
+            // MARK: - Alert
         let alert = UIAlertController(title: "Significado", message: signoDescription[indexPath.row], preferredStyle: .alert)
         let confirme = UIAlertAction(title: "ok", style: .default, handler: nil)
         alert.addAction(confirme)
