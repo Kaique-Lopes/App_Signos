@@ -30,10 +30,10 @@ class ViewController: UITableViewController {
         signoDescription.append("Sagitarinho")
     }
     
-        // MARK: - Put the number of sections on the table
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+//        // MARK: - Put the number of sections on the table
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
     
         // MARK: - Print the content in the table rows
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -52,6 +52,7 @@ class ViewController: UITableViewController {
         
         
         tableView.deselectRow(at: indexPath, animated: true)
+        
             // MARK: - Alert
         let alert = UIAlertController(title: "Significado", message: signoDescription[indexPath.row], preferredStyle: .alert)
         let confirme = UIAlertAction(title: "ok", style: .default, handler: nil)
